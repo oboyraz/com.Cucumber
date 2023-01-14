@@ -38,4 +38,9 @@ public class QualitydemyStepdefinitions {
     public void cookieClickYapilir() {
         qualitydemyPage.cookie.click();
     }
+
+    @And("basarili giris yapilmadigini test eder")
+    public void basariliGirisYapilmadiginiTestEder() {
+        Assert.assertTrue(qualitydemyPage.emailArea.isDisplayed());
+    }
 }
