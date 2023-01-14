@@ -1,5 +1,4 @@
 Feature: US1002 kullanici amazon anasayfada birden fazla urun aratir
-
   @wip
   Scenario: kullanici urunleri aratıp test edebilmeli
     Given kullanici amazon anasayfaya gider
