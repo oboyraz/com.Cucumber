@@ -29,6 +29,29 @@ public class AmazonStepdefinitions {
         Assert.assertTrue(actSearchResult.contains(expResult));
 
     }
+
+    @Then("amazon arama kutusuna Java yazip aratir")
+    public void amazon_arama_kutusuna_java_yazip_aratir() {
+        amazonPage.searchBox.sendKeys("Java" + Keys.ENTER);
+    }
+    @Then("arama sonuclarinin Java icerdigini test eder")
+    public void arama_sonuclarinin_java_icerdigini_test_eder() {
+        String actSearchResult = amazonPage.searchResultElement.getText();
+        String expResult =  "Java";
+
+        Assert.assertTrue(actSearchResult.contains(expResult));
+    }
+    @Then("amazon arama kutusuna Samsung yazip aratir")
+    public void amazon_arama_kutusuna_samsung_yazip_aratir() {
+        amazonPage.searchBox.sendKeys("Samsung", Keys.ENTER);
+    }
+    @Then("arama sonuclarinin Samsung icerdigini test eder")
+    public void arama_sonuclarinin_samsung_icerdigini_test_eder() {
+        String actSearchResult = amazonPage.searchResultElement.getText();
+        String expResult =  "Samsung";
+
+        Assert.assertTrue(actSearchResult.contains(expResult));
+    }
     @Then("sayfayi kapatir")
     public void sayfayi_kapatir() {
 
