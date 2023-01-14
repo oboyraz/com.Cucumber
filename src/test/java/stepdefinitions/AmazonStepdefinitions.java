@@ -1,4 +1,5 @@
 package stepdefinitions;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.Given;
 import org.junit.Assert;
@@ -72,4 +73,22 @@ public class AmazonStepdefinitions {
         Assert.assertTrue(amazonPage.searchResultElement.getText().contains(searchedWord));
     }
 
+    @And("{int} saniye bekler")
+    public void saniyeBekler(int wait) {
+        try {
+            Thread.sleep(1000*wait);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @Given("kullanici {string} anasayfaya gider")
+    public void kullaniciAnasayfayaGider(String gidilecekSayfa) {
+        Driver.getDriver().get(ConfigReader.getProperty(gidilecekSayfa));
+    }
+
+    @Then("Url'de {string} oldugunu test eder")
+    public void urlDeOldugunuTestEder(String dataUrl) {
+        Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(dataUrl));
+    }
 }

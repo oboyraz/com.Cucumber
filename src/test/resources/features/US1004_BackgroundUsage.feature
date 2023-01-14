@@ -1,4 +1,4 @@
-@wip
+
 Feature: US1004 Kullanici bastaki ortak adimlar icin Background kullanir
 
   Background: Tum senaryolar icin ortak adim
@@ -14,6 +14,7 @@ Feature: US1004 Kullanici bastaki ortak adimlar icin Background kullanir
 
     Then amazon arama kutusuna "Java" yazip aratir
     And arama sonuclarinin "Java" icerdigini test eder
+    And 3 saniye bekler
     And sayfayi kapatir
 
   Scenario: TC04 Kullanici Parametreli method ile Samsung aratir
