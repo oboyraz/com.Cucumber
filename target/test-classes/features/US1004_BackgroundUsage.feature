@@ -21,3 +21,4 @@ Feature: US1004 Kullanici bastaki ortak adimlar icin Background kullanir
     Then amazon arama kutusuna "Samsung" yazip aratir
     And arama sonuclarinin "Samsung" icerdigini test eder
     And sayfayi kapatir
+    #dsfsdfsdf
