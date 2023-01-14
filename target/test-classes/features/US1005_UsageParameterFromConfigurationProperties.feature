@@ -1,4 +1,4 @@
-@wip
+
 Feature: US1005 Kullanici configuration.properties'te yazilan datalari parametre olarak kullanir
 
   Scenario: TC06 Kullanici amazon sitesine gidisi test eder
@@ -16,5 +16,5 @@ Feature: US1005 Kullanici configuration.properties'te yazilan datalari parametre
   Scenario: TC08 Kullanici walmart sitesine gidisi test eder
 
     Given kullanici "walmartUrl" anasayfaya gider
-    Then Url'de "arabam" oldugunu test eder
+    Then Url'de "walmart" oldugunu test eder
     And sayfayi kapatir
