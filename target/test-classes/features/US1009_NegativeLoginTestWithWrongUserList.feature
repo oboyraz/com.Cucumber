@@ -1,5 +1,5 @@
 Feature: US1009 Yanlis kullanici adı ve password listesi ile negatif login test
-  @wip
+
   Scenario Outline: TC14 yanlis kullanici listesi ile giris yapılamamalı
 
     Given kullanici "qdUrl" anasayfaya gider
