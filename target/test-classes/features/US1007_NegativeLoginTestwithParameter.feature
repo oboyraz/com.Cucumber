@@ -1,6 +1,6 @@
-@wip
+
 Feature: Kullanici yanlis bilgilerle giris yapamaz
-  Scenario: TC10 Gecersiz kullanici adi ve sifre ile Negatif login testi
+  Scenario: TC10 Gecersiz kullanici adi ve Gecersiz sifre ile Negatif login testi
 
     Given kullanici "qdUrl" anasayfaya gider
     Then ilk sayfa login linkine click yapar
