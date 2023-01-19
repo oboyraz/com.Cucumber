@@ -1,5 +1,5 @@
 Feature: US1011 Kullanici herokuapp sayfasinda butonlarin gorunur oldugunu test eder
-  @wip
+
   Scenario: TC16 kullanici bekleyerek butonlarin gorunur olmasini saglayin
     Given kullanici "herokuappUrl" anasayfaya gider
     And Add Element butonuna basar
