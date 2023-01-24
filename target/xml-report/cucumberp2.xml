@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="28.914">
+    <testcase classname="US1004 Kullanici bastaki ortak adimlar icin Background kullanir" name="TC04 Kullanici Parametreli method ile Java aratir" time="10.333">
+        <system-out>
+            <![CDATA[Given kullanici amazon anasayfaya gider.....................................passed
+Then amazon arama kutusuna "Java" yazip aratir..............................passed
+And arama sonuclarinin "Java" icerdigini test eder..........................passed
+And 3 saniye bekler.........................................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1005 Kullanici configuration.properties'te yazilan datalari parametre olarak kullanir" name="TC06 Kullanici amazon sitesine gidisi test eder" time="3.23">
+        <system-out>
+            <![CDATA[Given kullanici "amazonUrl" anasayfaya gider................................passed
+Then Url'de "amazon" oldugunu test eder.....................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1005 Kullanici configuration.properties'te yazilan datalari parametre olarak kullanir" name="TC07 Kullanici arabam sitesine gidisi test eder" time="3.344">
+        <system-out>
+            <![CDATA[Given kullanici "arabamUrl" anasayfaya gider................................passed
+Then Url'de "arabam" oldugunu test eder.....................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1005 Kullanici configuration.properties'te yazilan datalari parametre olarak kullanir" name="TC08 Kullanici walmart sitesine gidisi test eder" time="11.811">
+        <system-out>
+            <![CDATA[Given kullanici "walmartUrl" anasayfaya gider...............................passed
+Then Url'de "walmart" oldugunu test eder....................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
