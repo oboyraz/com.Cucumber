@@ -1,5 +1,5 @@
 Feature: US1012 Window Testi
-
+  @wip
   Scenario: TC17 Kullanici yeni acilan window'u test edebilmeli
     Given kullanici "wduUrl" anasayfaya gider
     And Login Portal a tiklar
@@ -11,4 +11,3 @@ Feature: US1012 Window Testi
     And OK diyerek popup i kapatir
     Then ilk sayfaya geri doner
     And ilk sayfaya dondugunu test eder
-    Then acilan tum sayfalari kapatir

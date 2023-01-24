@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="39.13">
+    <testcase classname="US1004 Kullanici bastaki ortak adimlar icin Background kullanir" name="TC04 Kullanici Parametreli method ile Macbook M1 aratir" time="7.604">
+        <system-out>
+            <![CDATA[Given kullanici amazon anasayfaya gider.....................................passed
+Then amazon arama kutusuna "Macbook M1" yazip aratir........................passed
+And arama sonuclarinin "Macbook M1" icerdigini test eder....................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1004 Kullanici bastaki ortak adimlar icin Background kullanir" name="TC04 Kullanici Parametreli method ile Samsung aratir" time="6.267">
+        <system-out>
+            <![CDATA[Given kullanici amazon anasayfaya gider.....................................passed
+Then amazon arama kutusuna "Samsung" yazip aratir...........................passed
+And arama sonuclarinin "Samsung" icerdigini test eder.......................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1006 Kullanici configuration dosyasindaki bilgilerle login olabilmeli" name="TC09 Gecerli kullanici adi ve sifre ile Pozitif login testi" time="25.074">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()='My courses']&quot;}&#10;  (Session info: chrome=94.0.4606.81)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.7.2', revision: '4d4020c3b7'&#10;System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-58-generic', java.version: '13.0.7'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [1c4991b5d53e4fd0fe9c6d537e0c7780, findElement {using=xpath, value=//a[text()='My courses']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.113 (9d935b6bb55e..., userDataDir: /tmp/.com.google.Chrome.DvbShc}, goog:chromeOptions: {debuggerAddress: localhost:46033}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:46033/devtoo..., se:cdpVersion: 94.0.4606.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 1c4991b5d53e4fd0fe9c6d537e0c7780" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given kullanici "qdUrl" anasayfaya gider....................................passed
+Then ilk sayfa login linkine click yapar....................................passed
+And kullanici kutusuna "qdValidUsername" yazar..............................passed
+And password kutusuna "qdValidPassword" yazar...............................passed
+And cookie click yapilir....................................................passed
+And 3 saniye bekler.........................................................passed
+Then login butonuna basar...................................................passed
+And 3 saniye bekler.........................................................passed
+And basarili giris yapildigini test eder....................................failed
+And sayfayi kapatir.........................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='My courses']"}
+  (Session info: chrome=94.0.4606.81)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-58-generic', java.version: '13.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1c4991b5d53e4fd0fe9c6d537e0c7780, findElement {using=xpath, value=//a[text()='My courses']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.113 (9d935b6bb55e..., userDataDir: /tmp/.com.google.Chrome.DvbShc}, goog:chromeOptions: {debuggerAddress: localhost:46033}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:46033/devtoo..., se:cdpVersion: 94.0.4606.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1c4991b5d53e4fd0fe9c6d537e0c7780
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy23.isDisplayed(Unknown Source)
+	at stepdefinitions.QualitydemyStepdefinitions.basarili_giris_yapildigini_test_eder(QualitydemyStepdefinitions.java:34)
+	at ✽.basarili giris yapildigini test eder(file:///home/isuzuotonom/Desktop/javaProjects/com.Cucumber/src/test/resources/features/US1006_PositiveLoginTestwithParameter.feature:14)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
