@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="7.623">
+    <testcase classname="US1013 Kullanici Web tablosunda istedigi degerin varligini test eder" name="TC18 Kullanici tablodan deger test edebilmeli" time="7.502">
+        <system-out>
+            <![CDATA[Given kullanici "guru99Url" anasayfaya gider................................passed
+Then Company listesini consola yazdirir.....................................passed
+And DBC Bankin listede oldugunu test eder...................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
