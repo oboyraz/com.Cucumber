@@ -1,4 +1,4 @@
-@smoke
+
 Feature: US1009 Yanlis kullanici adı ve password listesi ile negatif login test
 
   Scenario Outline: TC14 yanlis kullanici listesi ile giris yapılamamalı

@@ -1,4 +1,4 @@
-@p2
+
 Feature: US1005 Kullanici configuration.properties'te yazilan datalari parametre olarak kullanir
 
   Scenario: TC06 Kullanici amazon sitesine gidisi test eder

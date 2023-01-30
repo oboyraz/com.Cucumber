@@ -1,6 +1,6 @@
 Feature: US1002 kullanici amazon anasayfada birden fazla urun aratir
 
-
+  @p2
   Scenario: kullanici urunleri aratıp test edebilmeli
     Given kullanici amazon anasayfaya gider
     Then amazon arama kutusuna Nutella yazip aratir
