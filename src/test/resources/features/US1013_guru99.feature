@@ -4,4 +4,4 @@ Feature: US1013 Kullanici Web tablosunda istedigi degerin varligini test eder
     
     Given kullanici "guru99Url" anasayfaya gider
     Then Company listesini consola yazdirir
-    And DBC Bankin listede oldugunu test eder
+    And "IDFC Bank" listede oldugunu test eder
