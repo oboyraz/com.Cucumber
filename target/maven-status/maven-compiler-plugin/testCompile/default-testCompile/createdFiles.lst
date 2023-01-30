@@ -1,7 +1,9 @@
+pages/Guru99Page.class
 pages/EditorPage.class
 runners/Runner.class
 utilities/ConfigReader.class
 pages/QualitydemyPage.class
+stepdefinitions/Guru99StepDefinitions.class
 runners/ParallelRunner1.class
 stepdefinitions/Hooks.class
 pages/HerokuappPage.class

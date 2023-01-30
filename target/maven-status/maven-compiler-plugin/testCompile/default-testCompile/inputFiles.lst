@@ -13,4 +13,6 @@
 /home/isuzuotonom/Desktop/javaProjects/com.Cucumber/src/test/java/runners/Runner.java
 /home/isuzuotonom/Desktop/javaProjects/com.Cucumber/src/test/java/stepdefinitions/QualitydemyStepdefinitions.java
 /home/isuzuotonom/Desktop/javaProjects/com.Cucumber/src/test/java/pages/EditorPage.java
+/home/isuzuotonom/Desktop/javaProjects/com.Cucumber/src/test/java/stepdefinitions/Guru99StepDefinitions.java
+/home/isuzuotonom/Desktop/javaProjects/com.Cucumber/src/test/java/pages/Guru99Page.java
 /home/isuzuotonom/Desktop/javaProjects/com.Cucumber/src/test/java/runners/ParallelRunner1.java
